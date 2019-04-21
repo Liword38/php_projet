@@ -20,9 +20,15 @@
 
 8) Commenter les lignes 9 à 13 de '.env' --> symbole # en début de ligne
 
+## DEMARRER LE SERVEUR
+
+9) 'php artisan serve'
+
+10) Aller sur http://localhost:8000
+
 ## EXPLORER LA BD
 
-1) Aller à http://localhost:8000/phpliteadmin.php
+1) Aller sur localhost:8000/phpliteadmin.php
 
 2) Mot de passe: admin
 
