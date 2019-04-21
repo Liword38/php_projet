@@ -18,9 +18,11 @@
 
 6) Renommer '.env.example' en '.env'
 
-7) Dans '.env' ligne 8: Changer 'DB_CONNECTION=mysql' pour 'DB_CONNECTION=sqlite'
+7) 'php artisan key:generate'
 
-8) Commenter les lignes 9 à 13 de '.env' --> symbole # en début de ligne
+8) Dans '.env' ligne 8: Changer 'DB_CONNECTION=mysql' pour 'DB_CONNECTION=sqlite'
+
+9) Commenter les lignes 9 à 13 de '.env' --> symbole # en début de ligne
 
 ## DEMARRER LE SERVEUR
 
