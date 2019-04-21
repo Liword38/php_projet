@@ -2,7 +2,9 @@
 
 1) Dans le répertoire souhaité: 'Git clone https://github.com/Liword38/php_projet.git'
 
-2) Dans le répertoire racine: 'php composer install'  (Si des messages d'erreur du type "...ext-fileinfo * -> the requested PHP extension fileinfo is missing from your system." aller dans le fichier 'php.ini' de la version php utilisée et décommenter la ligne ';extension=fileinfo' par exemple)
+2) Dans le répertoire racine: 'php composer install'  
+
+(Si des messages d'erreur du type "...ext-fileinfo * -> the requested PHP extension fileinfo is missing from your system." aller dans le fichier 'php.ini' de la version php utilisée et décommenter la ligne ';extension=fileinfo' par exemple)
 
 ## BASE DE DONNEE
 
