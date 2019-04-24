@@ -32,7 +32,7 @@
 
 3) Récupérer les paramètres de l'App dans l'onglet "App Keys"
 
-4) Remplir les paramètres PUSHER dans '.env', par exemple :  
+4) Remplir les paramètres PUSHER dans '.env', par exemple :   (penser à ajouter le cluster qui n'est pas dans Laravel par défaut)
 `PUSHER_APP_ID="767658"`  
 `PUSHER_APP_KEY="8e5a3f50fc6c74dd259a"`  
 `PUSHER_APP_SECRET="2de1637d738a89b73da1"`  
