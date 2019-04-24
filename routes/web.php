@@ -24,3 +24,13 @@ Route::get('/articles','PostsController@index');
 //Affiche un seul article dont le nom est dans l'URL
 Route::get('/articles/{post_name}', 'PostsController@show');
 
+//vérifie l'authentification lors de l'utilisation d'une route
+Auth::routes();
+
+
+//Redirige sur la vue du Chat
+Route::get('/chat', 'ChatsController@index');
+
+//Permet d'envoyer et de recevoir des messages dans le Chat
+Route::get('/messages', 'ChatsController@fetchMessages');
+Route::post('/messages', 'ChatsController@sendMessage');

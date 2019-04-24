@@ -28,11 +28,22 @@ class User extends Authenticatable
     ];
 
     /**
-    * Get the user posts'
+    * Get the user posts'.A user can have many posts
+
     */
    public function posts()
    {
        return $this->hasMany('App\Post', 'post_author');
    }
+
+   /**
+   * A user can have many messages
+   *
+   * @return \Illuminate\Database\Eloquent\Relations\HasMany
+   */
+    public function messages()
+{
+  return $this->hasMany(Message::class);
+}
 
 }
