@@ -30,19 +30,19 @@
 
 2) Dans '.env' modifier `BROADCAST_DRIVER=log` en `BROADCAST_DRIVER=pusher`
 
-3) Remplir les paramètres PUSHER dans '.env', par exemple :  
+3) Récupérer les paramètres de l'App dans l'onglet "App Keys"
+
+4) Remplir les paramètres PUSHER dans '.env', par exemple :  
 `PUSHER_APP_ID="767658"`  
 `PUSHER_APP_KEY="8e5a3f50fc6c74dd259a"`  
 `PUSHER_APP_SECRET="2de1637d738a89b73da1"`  
 `PUSHER_CLUSTER=eu`  
 
-4)
-
 ## DEMARRER LE SERVEUR
 
-9) `php artisan serve`
+1) `php artisan serve`
 
-10) Aller sur http://localhost:8000
+2) Aller sur http://localhost:8000
 
 ## EXPLORER LA BD
 
