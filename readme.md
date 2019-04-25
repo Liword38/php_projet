@@ -39,6 +39,8 @@
 `PUSHER_APP_SECRET="2de1637d738a89b73da1"`  
 `PUSHER_CLUSTER=eu`  
  (penser à ajouter le cluster qui n'est pas dans Laravel par défaut)
+ 
+ 5) Dans 'vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastManager.php' ligne 217 changer `\Pusher` pour `\Pusher\Pusher`
 
 ## DEMARRER LE SERVEUR
 
