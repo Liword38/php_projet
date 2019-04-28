@@ -1,3 +1,7 @@
+N'ayant pas réussi à merge la branche chat dans la branche master dans le temps imparti, la solution provisoire choisie a été de définir la branche chat comme branche par défaut du repository.
+
+
+
 
 ## INSTALLATION
 
