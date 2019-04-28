@@ -41,6 +41,8 @@
  (penser à ajouter le cluster qui n'est pas dans Laravel par défaut)
  
  5) Dans 'vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastManager.php' ligne 217 changer `\Pusher` pour `\Pusher\Pusher`
+ 
+ 6) Dans 'vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php' rajouter `Use Pusher\Pusher;` au début du ficher avec les autres lignes `Use...`
 
 ## DEMARRER LE SERVEUR
 
