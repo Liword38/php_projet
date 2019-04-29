@@ -66,9 +66,9 @@
 `GITHUB_SECRET=18cf68a0e3dec65e419afb23ad6ff30c5c9e3da4`
 `GITHUB_URL=http://localhost:8000/login/github/callback`
 
-`FACEBOOK_ID=444515592779405`
-`FACEBOOK_SECRET=ba020e34833a63ca1894c314fce42b51`
-`FACEBOOK_URL=http://localhost:8000/login/facebook/callback`
+  `FACEBOOK_ID=444515592779405`
+  `FACEBOOK_SECRET=ba020e34833a63ca1894c314fce42b51`
+  `FACEBOOK_URL=http://localhost:8000/login/facebook/callback`
 
 3) Pour être autorisé à vous connecter via Facebook il faut accepter l'invitation à être utilisateur testeur sur l'application.
 
