@@ -1,3 +1,4 @@
+<!-- Vue affichant le formulaire de contact ainsi que les messages déjà postés -->
 <!doctype <!DOCTYPE html>
 @extends('layouts/main')
 <html>
@@ -7,8 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
 <form action="{{ url('/contact') }}" method="POST">
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <input type="text" class="form-control {{ $errors->has('contact_name') ? 'is-invalid' : '' }}" name="contact_name" id="contact_name" placeholder="Votre nom"
+                            <input type="text" class="form-control {{ $errors->has('contact_name') ? 'is-invalid' : '' }}" name="contact_name" id="contact_name" placeholder="Votre nom (sans espace)"
                                 value="{{ old('contact_name') }}"> {!! $errors->first('contact_name', '
                             <div class="invalid-feedback">:message</div>') !!}
                         </div>
@@ -43,7 +42,7 @@
 
                 @endforeach
             </ul>
-               
+
             </div>
 
 </body>

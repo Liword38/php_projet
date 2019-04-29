@@ -1,3 +1,4 @@
+<!-- vue de confirmation de contact -->
 <!doctype html>
 @extends('layouts/main')
 <html>
