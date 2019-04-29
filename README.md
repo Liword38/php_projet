@@ -101,7 +101,7 @@ Pour tester :
 
 # RÉPARTITION DU TRAVAIL :
 
-Le TP2 a été réalisé en double au cours du semestre, nous avons décidé arbitrairement d'en choisisr un comme base de travail. Chaqu'un d'entre nous a ensuite réalisé une fonctionnalité supplémentaire.
+Le TP2 a été réalisé en double au cours du semestre, nous avons décidé arbitrairement d'en choisir un comme base de travail. Chaqu'un d'entre nous a ensuite réalisé une fonctionnalité supplémentaire.
 
 
 
