@@ -6,7 +6,7 @@
 
 (Si des messages d'erreur du type `...ext-fileinfo * -> the requested PHP extension fileinfo is missing from your system.` aller dans le fichier 'php.ini' de la version php utilisée et décommenter la ligne `;extension=fileinfo` par exemple)
 
-## BASE DE DONNEE
+## BASE DE DONNEES
 
 3) Créer le fichier 'database.sqlite' dans le répertoire 'database'
 
@@ -75,4 +75,38 @@
 #Problème possible : 
 
 Si votre certificat curl n'est pas à jour vous pouvez obtenir `cURL error 60` lors de l'authentification avec GitHub et Facebook. Pour le mettre à jour il faut suivre les instructions sur  https://docs.bolt.cm/3.6/howto/curl-ca-certificates pour télécharger cacert.pem . 
+
+# PARTIES IMPLÉMENTÉES
+
+11) Un Webchat avec Pusher et vue.js
+
+Pour tester : 
+- Cliquer sur le bouton "Chat" dans le menu du layout ou à l'adresse "localhost:8000/chat"; Accéder au chat demande d'être authentifié soit en créant un compte sur l'application soit en utilisant un compte Facebook ou Github.
+- Pour simuler une discussion il suffit de se connecter avec 2 comptes différents.
+
+
+/!\ Le chat n'affiche pas automatiquement les messages des autres utilisateurs, il faut rafraîchir la page pour afficher les nouveaux messages.
+
+
+
+6) Identification avec Google et Github en utilisant Socialite
+
+Pour tester : 
+- Cliquer sur "login" en haut à droite de n'importe quelle page et sélectionner "Login with GitHub" ou "Login with Facebook".
+
+/!\ L'authentification avec GitHub ne récupère pas de nom dans la base de donnée, le nom des utilisateurs authentifiés de cette manière est actuellement NULL.
+
+
+
+
+# RÉPARTITION DU TRAVAIL :
+
+Le TP2 a été réalisé en double au cours du semestre, nous avons décidé arbitrairement d'en choisisr un comme base de travail. Chaqu'un d'entre nous a ensuite réalisé une fonctionnalité supplémentaire.
+
+
+
+# DIFFICULTÉS RENCONTRÉES :
+
+Par manque de temps et à cause d'un nombre de bugs imprévus impressionnant nous n'avons pas pu pauffiner les fonctionnalités comme nous l'aurions aimé. 
+Mis à part celà le projet était très intéressant à mener, la recherche d'info en indépendant a été très enrichissante.
      
