@@ -51,6 +51,26 @@
 
 2) Mot de passe: admin
 
-## Reroll les seeds de la BD
+## REROLL LES SEEDS DE LA BD
 
 1) `php artisan migrate:refresh --seed`
+
+## INITIALISATION DE SOCIALITE (IDENTIFICATION RÉSEAUX SOCIAUX)
+
+1) S'il n'y a pas de répertoire Socialite dans vendor/laravel :
+   - dans le répertoire racine `composer require laravel/socialite "~3.0"`
+   - dans config/app.php ajouter la ligne `Laravel\Socialite\SocialiteServiceProvider::class,` dans le tableau ` 'provider' =>      [ ];` et `'Socialite' => Laravel\Socialite\Facades\Socialite::class,` dans le tableau `'aliaces'=> [ ];`.
+
+2) Ajouter au fihier.env : 
+`GITHUB_ID=7c14a9d96110964fbb37
+GITHUB_SECRET=18cf68a0e3dec65e419afb23ad6ff30c5c9e3da4
+GITHUB_URL=http://localhost:8000/login/github/callback
+
+FACEBOOK_ID=444515592779405
+FACEBOOK_SECRET=ba020e34833a63ca1894c314fce42b51
+FACEBOOK_URL=http://localhost:8000/login/facebook/callback`
+
+#Probèlme possible : 
+
+Si votre certificat curl n'est pas à jour vous pouvez obtenir `cURL error 60` lors de l'authentification avec GitHub et Facebook. Pour le mettre à jour il faut suivre les instructions sur  https://docs.bolt.cm/3.6/howto/curl-ca-certificates pour télécharger cacert.pem . 
+     
