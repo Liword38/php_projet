@@ -34,3 +34,7 @@ Route::get('/chat', 'ChatsController@index');
 //Permet d'envoyer et de recevoir des messages dans le Chat
 Route::get('/messages', 'ChatsController@fetchMessages');
 Route::post('/messages', 'ChatsController@sendMessage');
+
+//Github
+Route::get('login/{provider}', 'Auth\SocialAuth@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\SocialAuth@handleProviderCallback');
