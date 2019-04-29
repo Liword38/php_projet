@@ -61,8 +61,8 @@
    - dans le répertoire racine `composer require laravel/socialite "~3.0"`
    - dans config/app.php ajouter la ligne `Laravel\Socialite\SocialiteServiceProvider::class,` dans le tableau ` 'provider' =>      [ ];` et `'Socialite' => Laravel\Socialite\Facades\Socialite::class,` dans le tableau `'aliaces'=> [ ];`.
 
-2) Ajouter au fihier.env : 
-`GITHUB_ID=7c14a9d96110964fbb37`
+2) Ajouter au fihier.env :  
+  `GITHUB_ID=7c14a9d96110964fbb37`
 `GITHUB_SECRET=18cf68a0e3dec65e419afb23ad6ff30c5c9e3da4`
 `GITHUB_URL=http://localhost:8000/login/github/callback`
 
